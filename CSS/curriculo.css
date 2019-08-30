@@ -122,6 +122,9 @@ footer{
 .whatsapp{
     background-image: url(../img/whatsapp.png);
 }
+.github{
+    background-image: url(../img/github.png);
+}
 footer li {
     display: inline-block;
 }
