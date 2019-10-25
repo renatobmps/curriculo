@@ -1,136 +1,156 @@
-body{
-    font-family: 'Ubuntu', sans-serif, 'Barriecito', cursive, Arial, Helvetica, sans-serif;
-    background-color: #111;
-    font-size: 100%;
-    line-height: 1.5;
-    overflow-x: hidden;
+body {
+  font-family: 'Ubuntu', sans-serif, 'Barriecito', cursive, Arial, Helvetica, sans-serif;
+  background-color: #090806;
+  font-size: 100%;
+  line-height: 1.5;
+  overflow-x: hidden;
 }
-strong, strong li a {
-    font-weight: bold;
-    color: brown;
+strong,
+strong li a {
+  font-weight: bold;
+  color: #0f5a7c;
+  text-shadow: 0 0 1.5px #090806;
 }
 em {
-    font-style: italic;
+  font-style: italic;
 }
-header,main{
-    text-align: justify;
+header,
+main {
+  text-align: justify;
 }
-h1{
-    margin: 0;
-    text-align: center;
-    background-color: brown;
-    padding: 2rem;
-    background-image: linear-gradient(to right,
-    rgba(200, 200, 200, .5),
-    rgba(200, 200, 200, 1),
-    rgba(200, 200, 200, .5));
-    background-size: 100% 1px;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    text-shadow: 1px 1px #fff;
+#curriculo-titulo {
+  margin: 0;
+  text-align: center;
+  color: #090806;
+  background-color: #0f5a7c;
+  padding: 2rem;
+  background-size: 100% 1px;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  text-shadow: 1px 1px #fff5e1;
+  border-bottom: 1.5px solid #fff5e1;
+  border-top: 1.5px solid #fff5e1;
 }
-strong li a{
-    color: brown;
+strong li a {
+  color: #0f5a7c;
 }
-h1, h2{
-    text-transform: uppercase;
+h1,
+h2 {
+  text-transform: uppercase;
 }
-header{
-    background-color: #fff;
-    width: 270px;
-    float: left;
-    text-align: center;
-    box-sizing: border-box;
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 10%;
-    text-shadow: .6px .6px #111;
-    box-shadow: 0 0 40px #222;
+header {
+  background-color: #fff5e1;
+  width: 270px;
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10%;
+  text-shadow: 0.6px 0.6px #090806;
+  box-shadow: 0 0 40px #090806;
 }
-.foto{
-    width: 100%;
-    border-radius: 50%;
-    box-shadow: 0 0 10px #222;
+.foto {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #090806;
+  transition: box-shadow 1s, transform 1s;
+  transition-delay: 1s, 0s;
 }
-
-main{
-    padding: 2em;
-    width: 60%;
-    float: right;
-    color: #ccc;
+.foto:hover,
+.foto:focus {
+  transition-delay: 0s, 1s;
+  transform: scale(1.4) rotate(360deg);
 }
-li{
-    margin: 2rem;
+main {
+  padding: 2em;
+  width: 60%;
+  float: right;
+  color: #fff5e1;
 }
-.experiencia li:hover{
-    background: #333;
-    text-shadow: 0 0 1px brown;
+li {
+  margin: 2rem;
 }
-.experiencia li:nth-of-type(odd){
-    background: #222;
-    border-radius: 10%;
-    padding: 20px;
-    margin: 10px;
+.experiencia li {
+  transition: box-shadow 1s, transform 1s;
+  transition-delay: 1s, 0s;
 }
-.experiencia li:nth-of-type(even){
-    background: #444;
-    border-radius: 10%;
-    padding: 20px;
-    margin: 10px;
+.experiencia li:hover {
+  background: #333;
+  box-shadow: 0 0 0 9999px #090806;
+  transition-delay: 0s, 1s;
 }
-
-footer{
-    color: #fff;
-    background-image: linear-gradient(to bottom, transparent, #222);
-    clear: both;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    box-sizing: border-box;
+.experiencia li:nth-of-type(odd) {
+  background: #222;
+  border-radius: 10%;
+  padding: 20px;
+  margin: 10px;
 }
-
+.experiencia li:nth-of-type(even) {
+  background: #444;
+  border-radius: 10%;
+  padding: 20px;
+  margin: 10px;
+}
+.experiencia li:nth-of-type(odd):hover {
+  transform: scale(1.2) rotate(3deg);
+}
+.experiencia li:nth-of-type(even):hover {
+  transform: scale(1.2) rotate(-3deg);
+}
+footer {
+  color: #fff5e1;
+  background-image: linear-gradient(to bottom, transparent, #222);
+  clear: both;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+ul {
+  margin: 0;
+}
 .icones-redes-sociais a {
-    width: 40px;
-    height: 40px;
-    display: block;
-    text-indent: -99999px;
+  width: 40px;
+  height: 40px;
+  display: block;
+  text-indent: -99999px;
 }
-.ico a{
-    width: 100px;
-    height: 20px;
-    display: block;
-    text-indent: 24px;
-    font-size: calc(100% - 5px);
-    background-repeat: no-repeat;
-    list-style-type: none;
-    position: relative;
-    left: -30px;
+.ico a {
+  width: 100px;
+  height: 20px;
+  display: block;
+  text-indent: 24px;
+  font-size: calc(100% - 5px);
+  background-repeat: no-repeat;
+  list-style-type: none;
+  position: relative;
+  left: -30px;
 }
 .ico {
-    list-style-type: none;
+  list-style-type: none;
 }
-.whats{
-    background-image: url(../img/whatsapp-ico.png);
+.whats {
+  background-image: url(../img/whatsapp-ico.png);
 }
-.gmail{
-    background-image: url(../img/gmail-ico.png);
+.gmail {
+  background-image: url(../img/gmail-ico.png);
 }
-
-.linkedin{
-    background-image: url(../img/linkedin.png);
+.linkedin {
+  background-image: url(../img/linkedin.png);
 }
-.instagram{
-    background-image: url(../img/instagram.png);
+.instagram {
+  background-image: url(../img/instagram.png);
 }
-.facebook{
-    background-image: url(../img/facebook.png);
+.facebook {
+  background-image: url(../img/facebook.png);
 }
-.whatsapp{
-    background-image: url(../img/whatsapp.png);
+.whatsapp {
+  background-image: url(../img/whatsapp.png);
 }
-.github{
-    background-image: url(../img/github.png);
+.github {
+  background-image: url(../img/github.png);
 }
 footer li {
-    display: inline-block;
+  display: inline-block;
 }
