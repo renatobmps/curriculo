@@ -27,9 +27,9 @@ main {
   background-size: 100% 1px;
   background-repeat: no-repeat;
   background-position: bottom center;
-  text-shadow: 1px 1px #fff5e1;
-  border-bottom: 1.5px solid #fff5e1;
-  border-top: 1.5px solid #fff5e1;
+  text-shadow: 1px 1px #fff;
+  border-bottom: 1.5px solid #fff;
+  border-top: 1.5px solid #fff;
 }
 strong li a {
   color: #0f5a7c;
@@ -39,7 +39,7 @@ h2 {
   text-transform: uppercase;
 }
 header {
-  background-color: #fff5e1;
+  background-color: #fff;
   width: 270px;
   float: left;
   text-align: center;
@@ -66,7 +66,7 @@ main {
   padding: 2em;
   width: 60%;
   float: right;
-  color: #fff5e1;
+  color: #fff;
 }
 li {
   margin: 2rem;
@@ -74,6 +74,8 @@ li {
 .experiencia li {
   transition: box-shadow 1s, transform 1s;
   transition-delay: 1s, 0s;
+  padding: 20%;
+  margin: 10px;
 }
 .experiencia li:hover {
   background: #333;
@@ -93,13 +95,15 @@ li {
   margin: 10px;
 }
 .experiencia li:nth-of-type(odd):hover {
+  padding: 10%;
   transform: scale(1.2) rotate(3deg);
 }
 .experiencia li:nth-of-type(even):hover {
+  padding: 10%;
   transform: scale(1.2) rotate(-3deg);
 }
 footer {
-  color: #fff5e1;
+  color: #fff;
   background-image: linear-gradient(to bottom, transparent, #222);
   clear: both;
   bottom: 0;
