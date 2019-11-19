@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="shutcut icon" href="favicon.png" type="image/x-icon">
     <title>Curriculo - Renato Brandão Martins Pinheiro Silva</title>
-    <link rel="stylesheet" href="CSS/normalize.css">
-    <link rel="stylesheet" href="CSS/curriculo.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/libs/tooltipster.bundle.min.css">
+    <link rel="stylesheet" href="css/libs/libs/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-shadow.min.css">
     <link href="https://fonts.googleapis.com/css?family=Barriecito&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/curriculo.css">
 </head>
 <body>    
     <header>
@@ -115,6 +117,7 @@
                 <li>Oracle I: Aprenda SQL usando esse famoso Banco de dados - Alura Cursos Online (2019).</li>
                 <li>Git e Github – Alura Cursos Online (2019).</li>
                 <li>jQuery: Domine a biblioteca mais popular do mercado Parte 1 – Aluna Cursos Online (2019);</li>
+                <li>jQuery: Avance na biblioteca mais popular do mercado Parte 2 – Aluna Cursos Online (2019);</li>
             </ul>
         </div>
     </main>
@@ -124,26 +127,45 @@
         <ul class="icones-redes-sociais">
             <p>Me conheça melhor:</p>
             <li>
-                <a href="https://www.linkedin.com/in/renatobmps/" class="linkedin" target="blank">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/renatobmps/" class="tooltip linkedin" title="LinkedIn" target="blank" data-tooltip-content="#tooltip_content-linkedin">LinkedIn</a>
             </li>
             |
             <li>
-                <a href="https://www.instagram.com/renatobmps/?hl=pt-br" class="instagram" target="blank">Instagram</a>
+                <a href="https://www.instagram.com/renatobmps/?hl=pt-br" class="tooltip instagram" title="Instagram" target="blank" data-tooltip-content="#tooltip_content-instagram">Instagram</a>
             </li>
             |
             <li>
-                <a href="https://www.facebook.com/profile.php?id=100006658218717", class="facebook" target="blank">Facebook</a>
+                <a href="https://www.facebook.com/profile.php?id=100006658218717", class="tooltip facebook" title="Facebook" target="blank" data-tooltip-content="#tooltip_content-facebook">Facebook</a>
             </li>
             |
             <li>
-                <a href="http://api.whatsapp.com/send?phone=5511947689391&text=Olá!%20Peguei%20seu%20número%20no%20seu%20site.%20" class="whatsapp" target="blank">WhatsApp</a>
+                <a href="http://api.whatsapp.com/send?phone=5511947689391&text=Olá!%20Peguei%20seu%20número%20no%20seu%20site.%20" class="tooltip whatsapp" title="WhatsApp" target="blank" data-tooltip-content="#tooltip_content-whatsapp">WhatsApp</a>
             </li>
             |
             <li>
-                <a href="https://github.com/renatobmps" class="github" target="blank">Github</a>
+                <a href="https://github.com/renatobmps" class="tooltip github" title="Github" target="blank" data-tooltip-content="#tooltip_content-github">Github</a>
             </li>
         </ul>
+        <div class="tooltip_templates">
+            <span id="tooltip_content-linkedin">
+                <img src="img/linkedin.jpeg" /> <p>LinkedIn</p>
+            </span>
+            <span id="tooltip_content-instagram">
+                <img src="img/instagram.jpeg" /> <p>Instagram</p>
+            </span>
+            <span id="tooltip_content-facebook">
+                <img src="img/facebook.jpeg" /> <p>Facebook</p>
+            </span>
+            <span id="tooltip_content-whatsapp">
+                <img src="img/whatsapp.jpeg" /> <p>WhatsApp</p>
+            </span>
+            <span id="tooltip_content-github">
+                <img src="img/github.jpeg" /> <p>Github</p>
+            </span>
+        </div>
     </footer>
-    <script src="JS/main.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/tooltipster.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

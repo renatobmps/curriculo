@@ -1,0 +1,164 @@
+@cor-principal: #0f5a7c;
+@cor-secundaria: #fff;
+@cor-terciaria: #090806;
+
+body{
+    font-family: 'Ubuntu', sans-serif, 'Barriecito', cursive, Arial, Helvetica, sans-serif;
+    background-color: @cor-terciaria;
+    font-size: 100%;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+strong, strong li a {
+    font-weight: bold;
+    color: @cor-principal;
+    text-shadow: 0 0 1.5px @cor-terciaria;
+}
+em {
+    font-style: italic;
+}
+header,main{
+    text-align: justify;
+}
+#curriculo-titulo{
+    margin: 0;
+    text-align: center;
+    color: @cor-terciaria;
+    background-color: @cor-principal;
+    padding: 2rem;
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    text-shadow: 1px 1px @cor-secundaria;
+    border-bottom: 1.5px solid @cor-secundaria;
+    border-top: 1.5px solid @cor-secundaria;
+}
+strong li a{
+    color: @cor-principal;
+}
+h1, h2{
+    text-transform: uppercase;
+}
+header{
+    background-color: @cor-secundaria;
+    width: 270px;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10%;
+    text-shadow: .6px .6px @cor-terciaria;
+    box-shadow: 0 0 40px @cor-terciaria;
+}
+.foto{
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 10px @cor-terciaria;
+    transition: box-shadow 1s, transform 1s;
+    transition-delay: 1s, 0s;
+}
+.foto:hover, .foto:focus{
+    transition-delay: 0s, 1s;
+    transform: scale(1.4) rotate(360deg);
+}
+
+main{
+    padding: 2em;
+    width: 60%;
+    float: right;
+    color: @cor-secundaria;
+}
+li{
+    margin: 2rem;
+}
+.experiencia li{
+    transition: box-shadow 1s, transform 1s;
+    transition-delay: 1s, 0s;
+    padding: 20%;
+    margin: 10px;
+}
+.experiencia li:hover{
+    background: #333;
+    box-shadow: 0 0 0 9999px rgba(@cor-terciaria, 99);
+    transition-delay: 0s, 1s;
+}
+.experiencia li:nth-of-type(odd){
+    background: #222;
+    border-radius: 10%;
+    padding: 20px;
+    margin: 10px;
+}
+.experiencia li:nth-of-type(even){
+    background: #444;
+    border-radius: 10%;
+    padding: 20px;
+    margin: 10px;
+}
+.experiencia li:nth-of-type(odd):hover{
+    padding: 10%;
+    transform: scale(1.2) rotate(3deg);
+}
+.experiencia li:nth-of-type(even):hover{
+    padding: 10%;
+    transform: scale(1.2) rotate(-3deg);
+}
+
+footer{
+    color: @cor-secundaria;
+    background-image: linear-gradient(to bottom, transparent, #222);
+    clear: both;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+ul{
+    margin: 0;
+}
+
+.icones-redes-sociais a {
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-indent: -99999px;
+}
+.ico a{
+    width: 100px;
+    height: 20px;
+    display: block;
+    text-indent: 24px;
+    font-size: calc(100% - 5px);
+    background-repeat: no-repeat;
+    list-style-type: none;
+    position: relative;
+    left: -30px;
+}
+.ico {
+    list-style-type: none;
+}
+.whats{
+    background-image: url(../img/whatsapp-ico.png);
+}
+.gmail{
+    background-image: url(../img/gmail-ico.png);
+}
+
+.linkedin{
+    background-image: url(../img/linkedin.png);
+}
+.instagram{
+    background-image: url(../img/instagram.png);
+}
+.facebook{
+    background-image: url(../img/facebook.png);
+}
+.whatsapp{
+    background-image: url(../img/whatsapp.png);
+}
+.github{
+    background-image: url(../img/github.png);
+}
+footer li {
+    display: inline-block;
+}
