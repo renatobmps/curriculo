@@ -114,6 +114,11 @@ footer {
 ul {
   margin: 0;
 }
+.icones-redes-sociais {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 .icones-redes-sociais a {
   width: 40px;
   height: 40px;
@@ -158,6 +163,6 @@ ul {
 footer li {
   display: inline-block;
 }
-.tooltip_templates{
+.tooltip_templates {
   width: 50px;
 }
