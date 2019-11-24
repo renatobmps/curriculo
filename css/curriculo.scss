@@ -1,0 +1,182 @@
+//variaveis
+$cor-principal: #0f5a7c;
+$cor-secundaria: #fff;
+$cor-fundo: #090806;
+$cor-redes-sociais: $cor-secundaria;
+$sombra: gray;
+
+//mixins
+@mixin flexbox-around {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+}
+@mixin flexbox-between{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+}
+@mixin icones ($tamanho) {
+    color: $cor-redes-sociais;
+    padding-right: 1em;
+    top: 10px;
+    left: 0;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    font-size: $tamanho;
+}
+@mixin destaque-hover {
+    transition-delay: 0s, 1s;
+    transition: 0s, 1.5s;
+    text-shadow: 0 0 20px $cor-secundaria;
+}
+
+/** geral **/
+#site{
+    margin: 0;
+    @include flexbox-around();
+    background: $cor-fundo;
+    color: $cor-secundaria;
+    overflow-x: hidden;
+    line-height: 1.4;
+    font-size: 80%;
+    font-family: 'Ubuntu', sans-serif, 'Barriecito', cursive, Arial, Helvetica, sans-serif;
+    section{
+        padding-top: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+}
+
+/** header **/
+header{
+    @include flexbox-between();
+    flex-direction: column;
+    padding: 2%;
+    background: $cor-principal;
+    float: left;
+    width: 20em;
+    text-align: center;
+    font-weight: bold;    
+    border: .1em solid $sombra;
+    a:link {
+        text-decoration:none;
+        color: $cor-secundaria;
+    }
+    a{
+        color: $cor-fundo;
+        transition: 0s, 1s;
+    }
+    a:hover{
+        color: $cor-secundaria;
+        @include destaque-hover();
+    }
+    i{
+        vertical-align: sub;
+        margin: 0 .5em;
+    }
+    h1{
+        text-transform: uppercase;
+    }
+    strong:hover, strong:focus{
+        @include destaque-hover();
+    }
+    strong{
+        transition: 0s, 1s;
+    }
+    ul, p{
+        padding: 0;
+        margin: 0;
+    }
+    h2{
+        background: rgba($sombra, .4);
+        border-radius: 50px;
+        border: 1px solid $cor-secundaria;
+    }
+    .foto {
+        width: 100%;
+        border-radius: 50%;
+        box-shadow: 0 0 5px $cor-secundaria;
+        transition: box-shadow 1s, transform 1s;
+        transition-delay: 1s, 0s;
+    }
+    .foto:hover, .foto:focus {
+        transition-delay: 0s, 1s;
+        transform: scale(1.4) rotate(360deg);
+        box-shadow: 0 0 0 $cor-secundaria;
+    }
+    #contatos{
+        ul{
+            list-style: none;
+            @include flexbox-around();
+        }
+        i.fas, i.fab{
+            @include icones(100%);
+            transition: 0s, 1s;
+        }
+        i.fas:hover, i.fab:hover{
+            @include destaque-hover();
+        }
+        .fa-whatsapp-square::before{
+            content: "\f232";
+        }
+        .fa-envelope-square::before{
+            content: "\f199";
+        }
+    }
+    #redes-sociais{
+        ul{
+            list-style: none;
+            @include flexbox-around();
+        }
+        i.fas, i.fab{
+            @include icones(140.0781%);
+        }
+        .fa-linkedin:before {
+            content: "\f08c";
+        }
+        .fa-instagram:before {
+            content: "\f16d";
+        }
+        .fa-facebook-square:before {
+            content: "\f082";
+        }
+        .fa-whatsapp-square:before {
+            content: "\f232";
+        }
+        .fa-github-square:before {
+            content: "\f092";
+        }
+    }
+}
+
+/** main **/
+main{
+    width: 64.1813%;
+    float: right;
+    padding: 0 5%;
+    background: $cor-secundaria;
+    color: #000;
+    margin: 1em;
+    box-shadow: 2px 2px $sombra;
+    border-radius: 2em;
+    line-height: 2;
+    h2{
+        text-align: center;
+        margin: 5% 0;
+    }
+    strong{
+        font-weight: bold;
+        color: $cor-principal;
+        text-shadow: 0 0 1px $cor-fundo;
+    }
+    .material-icons{
+        vertical-align: sub;
+        margin-right: 1em;
+        font-size: x-large;
+    }
+}
