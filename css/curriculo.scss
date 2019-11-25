@@ -1,9 +1,9 @@
 //variaveis
 $cor-principal: #0f5a7c;
 $cor-secundaria: #fff;
-$cor-fundo: #090806;
+$cor-fundo: lightgray;
 $cor-redes-sociais: $cor-secundaria;
-$sombra: gray;
+$sombra: #090806;
 
 //mixins
 @mixin flexbox-around {
@@ -163,7 +163,6 @@ main{
     color: #000;
     margin: 1em;
     box-shadow: 2px 2px $sombra;
-    border-radius: 2em;
     line-height: 2;
     h2{
         text-align: center;

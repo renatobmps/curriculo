@@ -5,7 +5,7 @@
   justify-content: space-around;
   align-content: center;
   flex-wrap: wrap;
-  background: #090806;
+  background: lightgray;
   color: #fff;
   overflow-x: hidden;
   line-height: 1.4;
@@ -29,12 +29,12 @@ header {
   width: 20em;
   text-align: center;
   font-weight: bold;
-  border: 0.1em solid gray; }
+  border: 0.1em solid #090806; }
   header a:link {
     text-decoration: none;
     color: #fff; }
   header a {
-    color: #090806;
+    color: lightgray;
     transition: 0s, 1s; }
   header a:hover {
     color: #fff;
@@ -56,7 +56,7 @@ header {
     padding: 0;
     margin: 0; }
   header h2 {
-    background: rgba(128, 128, 128, 0.4);
+    background: rgba(9, 8, 6, 0.4);
     border-radius: 50px;
     border: 1px solid #fff; }
   header .foto {
@@ -129,8 +129,7 @@ main {
   background: #fff;
   color: #000;
   margin: 1em;
-  box-shadow: 2px 2px gray;
-  border-radius: 2em;
+  box-shadow: 2px 2px #090806;
   line-height: 2; }
   main h2 {
     text-align: center;
@@ -138,7 +137,7 @@ main {
   main strong {
     font-weight: bold;
     color: #0f5a7c;
-    text-shadow: 0 0 1px #090806; }
+    text-shadow: 0 0 1px lightgray; }
   main .material-icons {
     vertical-align: sub;
     margin-right: 1em;
