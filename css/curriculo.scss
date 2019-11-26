@@ -121,12 +121,12 @@ header{
         i.fas:hover, i.fab:hover{
             @include destaque-hover();
         }
-        .fa-whatsapp-square::before{
+        /*.fa-whatsapp-square::before{
             content: "\f232";
         }
         .fa-envelope-square::before{
             content: "\f199";
-        }
+        }*/
     }
     #redes-sociais{
         ul{
@@ -136,7 +136,7 @@ header{
         i.fas, i.fab{
             @include icones(140.0781%);
         }
-        .fa-linkedin:before {
+        /*.fa-linkedin:before {
             content: "\f08c";
         }
         .fa-instagram:before {
@@ -150,7 +150,7 @@ header{
         }
         .fa-github-square:before {
             content: "\f092";
-        }
+        }*/
     }
 }
 
