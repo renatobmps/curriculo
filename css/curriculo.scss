@@ -4,7 +4,7 @@ $cor-secundaria: #fff;
 $cor-fundo: lightgray;
 $cor-redes-sociais: $cor-secundaria;
 $sombra: #090806;
-$mobile: "(max-width: 980px)";
+$mobile: "(max-width: 708px)";
 
 //mixins
 @mixin flexbox-around {
@@ -40,6 +40,7 @@ $mobile: "(max-width: 980px)";
 #site{
     margin: 0;
     @include flexbox-around();
+    flex-wrap: nowrap;
     background: $cor-fundo;
     color: $cor-secundaria;
     overflow-x: hidden;
@@ -58,6 +59,9 @@ $mobile: "(max-width: 980px)";
         @media #{$mobile} {
             padding: 5%;
         }
+    }
+    @media #{$mobile} {
+        flex-wrap: wrap;
     }
 }
 
