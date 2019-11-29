@@ -4,6 +4,7 @@ $cor-secundaria: #fff;
 $cor-fundo: lightgray;
 $cor-redes-sociais: $cor-secundaria;
 $sombra: #090806;
+$mobile: "(max-width: 980px)";
 
 //mixins
 @mixin flexbox-around {
@@ -45,10 +46,16 @@ $sombra: #090806;
     line-height: 1.4;
     font-size: 80%;
     font-family: 'Ubuntu', sans-serif, 'Barriecito', cursive, Arial, Helvetica, sans-serif;
+    #destaque{
+        background: darken($cor-principal, 10);
+    }
     section{
         padding-top: 0;
         margin: 0;
         box-sizing: border-box;
+        @media screen {
+            padding: 5%;
+        }
     }
 }
 
@@ -103,6 +110,9 @@ header{
         box-shadow: 0 0 5px $cor-secundaria;
         transition: box-shadow 1s, transform 1s;
         transition-delay: 1s, 0s;
+        @media #{$mobile} {
+            width: 40%
+        }
     }
     .foto:hover, .foto:focus {
         transition-delay: 0s, 1s;
@@ -152,6 +162,9 @@ header{
             content: "\f092";
         }*/
     }
+    @media #{($mobile)} {
+        width: 100%
+    }
 }
 
 /** main **/
@@ -177,5 +190,8 @@ main{
         vertical-align: sub;
         margin-right: 1em;
         font-size: x-large;
+    }
+    @media #{($mobile)} {
+        width: 100%
     }
 }
