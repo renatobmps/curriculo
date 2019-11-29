@@ -47,13 +47,15 @@ $mobile: "(max-width: 980px)";
     font-size: 80%;
     font-family: 'Ubuntu', sans-serif, 'Barriecito', cursive, Arial, Helvetica, sans-serif;
     #destaque{
-        background: darken($cor-principal, 10);
+        @media #{$mobile} {
+            background: darken($cor-principal, 10);
+        }
     }
     section{
         padding-top: 0;
         margin: 0;
         box-sizing: border-box;
-        @media screen {
+        @media #{$mobile} {
             padding: 5%;
         }
     }
@@ -162,7 +164,7 @@ header{
             content: "\f092";
         }*/
     }
-    @media #{($mobile)} {
+    @media #{$mobile} {
         width: 100%
     }
 }
@@ -191,7 +193,7 @@ main{
         margin-right: 1em;
         font-size: x-large;
     }
-    @media #{($mobile)} {
+    @media #{$mobile} {
         width: 100%
     }
 }
