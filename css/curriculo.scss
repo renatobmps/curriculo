@@ -137,12 +137,12 @@ header{
         i.fas:hover, i.fab:hover{
             @include destaque-hover();
         }
-        /*.fa-whatsapp-square::before{
+        .fa-whatsapp-square::before{
             content: "\f232";
         }
         .fa-envelope-square::before{
             content: "\f199";
-        }*/
+        }
     }
     #redes-sociais{
         ul{

@@ -82,34 +82,31 @@ header {
     transition-delay: 0s, 1s;
     transform: scale(1.4) rotate(360deg);
     box-shadow: 0 0 0 #fff; }
-  header #contatos {
-    /*.fa-whatsapp-square::before{
-        content: "\f232";
-    }
-    .fa-envelope-square::before{
-        content: "\f199";
-    }*/ }
-    header #contatos ul {
-      list-style: none;
-      display: flex;
-      justify-content: space-around;
-      align-content: center;
-      flex-wrap: wrap; }
-    header #contatos i.fas, header #contatos i.fab {
-      color: #fff;
-      padding-right: 1em;
-      top: 10px;
-      left: 0;
-      font-family: FontAwesome;
-      font-style: normal;
-      font-weight: normal;
-      text-decoration: inherit;
-      font-size: 100%;
-      transition: 0s, 1s; }
-    header #contatos i.fas:hover, header #contatos i.fab:hover {
-      transition-delay: 0s, 1s;
-      transition: 0s, 1.5s;
-      text-shadow: 0 0 20px #fff; }
+  header #contatos ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap; }
+  header #contatos i.fas, header #contatos i.fab {
+    color: #fff;
+    padding-right: 1em;
+    top: 10px;
+    left: 0;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    font-size: 100%;
+    transition: 0s, 1s; }
+  header #contatos i.fas:hover, header #contatos i.fab:hover {
+    transition-delay: 0s, 1s;
+    transition: 0s, 1.5s;
+    text-shadow: 0 0 20px #fff; }
+  header #contatos .fa-whatsapp-square::before {
+    content: "\f232"; }
+  header #contatos .fa-envelope-square::before {
+    content: "\f199"; }
   header #redes-sociais {
     /*.fa-linkedin:before {
         content: "\f08c";
