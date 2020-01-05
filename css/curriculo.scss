@@ -1,10 +1,8 @@
 //variaveis
 $cor-principal: #0f5a7c;
 $cor-secundaria: #fff;
-$cor-fundo: lightgray;
-$cor-redes-sociais: $cor-secundaria;
 $sombra: #090806;
-$mobile: "(max-width: 708px)";
+$mobile: "(max-width: 700px)";
 
 //mixins
 @mixin flexbox-around {
@@ -20,8 +18,7 @@ $mobile: "(max-width: 708px)";
     flex-wrap: wrap;
 }
 @mixin icones ($tamanho) {
-    color: $cor-redes-sociais;
-    padding-right: 1em;
+    padding: 1em;
     top: 10px;
     left: 0;
     font-family: FontAwesome;
@@ -37,15 +34,37 @@ $mobile: "(max-width: 708px)";
 }
 
 /** geral **/
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 1300px;
+    margin: 0 auto;
+    background: darken($color: $cor-secundaria, $amount: 30);
+    font-size: 14px;
+    a:link {
+        text-decoration:none;
+    }
+    a{
+        color: darken($color: $cor-secundaria, $amount: 30);
+        transition: 0s, 1s;
+    }
+    a:hover{
+        color: $cor-secundaria;
+        @include destaque-hover();
+    }
+    @media #{$mobile}{
+        font-size: 13px;
+    }
+}
 #site{
     margin: 0;
-    @include flexbox-around();
+    @include flexbox-between();
     flex-wrap: nowrap;
-    background: $cor-fundo;
+    background: darken($color: $cor-secundaria, $amount: 30);
     color: $cor-secundaria;
     overflow-x: hidden;
     line-height: 1.4;
-    font-size: 80%;
     font-family: 'Ubuntu', sans-serif, 'Barriecito', cursive, Arial, Helvetica, sans-serif;
     #destaque{
         @media #{$mobile} {
@@ -69,25 +88,13 @@ $mobile: "(max-width: 708px)";
 header{
     @include flexbox-between();
     flex-direction: column;
-    padding: 2%;
     background: $cor-principal;
     float: left;
     width: 20em;
     text-align: center;
     font-weight: bold;    
     border: .1em solid $sombra;
-    a:link {
-        text-decoration:none;
-        color: $cor-secundaria;
-    }
-    a{
-        color: $cor-fundo;
-        transition: 0s, 1s;
-    }
-    a:hover{
-        color: $cor-secundaria;
-        @include destaque-hover();
-    }
+    padding: 2em 2em 4em 2em;
     i{
         vertical-align: sub;
         margin: 0 .5em;
@@ -100,6 +107,15 @@ header{
     }
     strong{
         transition: 0s, 1s;
+    }
+    .objetivo{
+        transition: box-shadow 1s, transform 1s;
+        transition-delay: 1s, 0s;
+    }
+    .objetivo:hover, .objetivo:focus {
+        transition-delay: 0s, 1s;
+        transform: scale(1.4);
+        box-shadow: 0 0 0 $cor-secundaria;
     }
     ul, p{
         padding: 0;
@@ -130,18 +146,8 @@ header{
             list-style: none;
             @include flexbox-around();
         }
-        i.fas, i.fab{
-            @include icones(100%);
-            transition: 0s, 1s;
-        }
-        i.fas:hover, i.fab:hover{
-            @include destaque-hover();
-        }
-        .fa-whatsapp-square::before{
-            content: "\f232";
-        }
-        .fa-envelope-square::before{
-            content: "\f199";
+        a{
+            color: $cor-secundaria;
         }
     }
     #redes-sociais{
@@ -149,40 +155,69 @@ header{
             list-style: none;
             @include flexbox-around();
         }
-        i.fas, i.fab{
-            @include icones(140.0781%);
+        a{
+            color: $cor-secundaria;
         }
-        /*.fa-linkedin:before {
-            content: "\f08c";
+        .fa-linkedin{
+            &:hover, &:focus{
+                transition-delay: 0s, 2s;
+                transform: scale(1.4) rotate(360deg);
+                color: #0077B5;
+            }
         }
-        .fa-instagram:before {
-            content: "\f16d";
+        .fa-instagram{
+            &:hover, &:focus{
+                transition-delay: 0s, 2s;
+                transform: scale(1.4) rotate(360deg);
+                color: #8134AF;
+            }
         }
-        .fa-facebook-square:before {
-            content: "\f082";
+        .fa-facebook-square{
+            &:hover, &:focus{
+                transition-delay: 0s, 2s;
+                transform: scale(1.4) rotate(360deg);
+                color: #3B5998;
+            }
         }
-        .fa-whatsapp-square:before {
-            content: "\f232";
+        .fa-whatsapp-square{
+            &:hover, &:focus{
+                transition-delay: 0s, 2s;
+                transform: scale(1.4) rotate(360deg);
+                color: #25D366;
+            }
         }
-        .fa-github-square:before {
-            content: "\f092";
-        }*/
+        .fa-github-square{
+            &:hover, &:focus{
+                transition-delay: 0s, 2s;
+                transform: scale(1.4) rotate(360deg);
+                color: #333333;
+            }
+        }
+        /*
+        #0077B5
+        #8134AF
+        #3B5998
+        #25D366
+        #333333
+        */
     }
     @media #{$mobile} {
-        width: 100%
+        width: 100%;
+        padding: 1em;
     }
 }
 
 /** main **/
 main{
-    width: 64.1813%;
-    float: right;
+    width: 70%;
     padding: 0 5%;
     background: $cor-secundaria;
     color: #000;
     margin: 1em;
     box-shadow: 2px 2px $sombra;
     line-height: 2;
+    padding: 4em;
+    border-radius: 10px 0 0 0;
     h2{
         text-align: center;
         margin: 5% 0;
@@ -190,14 +225,42 @@ main{
     strong{
         font-weight: bold;
         color: $cor-principal;
-        text-shadow: 0 0 1px $cor-fundo;
+        text-shadow: 0 0 1px darken($color: $cor-secundaria, $amount: 30);
     }
     .material-icons{
         vertical-align: sub;
         margin-right: 1em;
         font-size: x-large;
     }
+    a{
+        color: $sombra;
+        text-decoration-line: none;
+    }
     @media #{$mobile} {
-        width: 100%
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/** footer **/
+footer{
+    width: 100%;
+    box-sizing: border-box;
+    padding: .1em;
+    background: rgba($sombra, .8);
+    color: $cor-secundaria;
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    p, strong{
+        text-align: center;
+        flex-grow: 1;
+    }
+    strong{
+        flex-grow: 3;
     }
 }
