@@ -3,6 +3,16 @@ $cor-principal: #0f5a7c;
 $cor-secundaria: #fff;
 $sombra: #090806;
 $mobile: "(max-width: 700px)";
+$linkedin-cor: #0077b5;
+$instagram-cor: #DD2A7B;
+@mixin instagram {
+    background: -webkit-linear-gradient(#515BD4, #8134AF, #DD2A7B, #FEDA77, #F58529);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+$facebook-cor: #4266b1;
+$whatsapp-cor: #5abfa5;
+$github-cor: #24292e;
 
 //mixins
 @mixin flexbox-around {
@@ -42,6 +52,7 @@ body{
     margin: 0 auto;
     background: darken($color: $cor-secundaria, $amount: 30);
     font-size: 14px;
+    font-family: 'Ubuntu', sans-serif, 'Barriecito', cursive, Arial, Helvetica, sans-serif;
     a:link {
         text-decoration:none;
     }
@@ -65,7 +76,6 @@ body{
     color: $cor-secundaria;
     overflow-x: hidden;
     line-height: 1.4;
-    font-family: 'Ubuntu', sans-serif, 'Barriecito', cursive, Arial, Helvetica, sans-serif;
     #destaque{
         @media #{$mobile} {
             background: darken($cor-principal, 10);
@@ -162,35 +172,36 @@ header{
             &:hover, &:focus{
                 transition-delay: 0s, 2s;
                 transform: scale(1.4) rotate(360deg);
-                color: #0077B5;
+                color: $linkedin-cor;
             }
         }
         .fa-instagram{
+            @include instagram();
             &:hover, &:focus{
                 transition-delay: 0s, 2s;
                 transform: scale(1.4) rotate(360deg);
-                color: #8134AF;
+                color: $instagram-cor;
             }
         }
         .fa-facebook-square{
             &:hover, &:focus{
                 transition-delay: 0s, 2s;
                 transform: scale(1.4) rotate(360deg);
-                color: #3B5998;
+                color: $facebook-cor;
             }
         }
         .fa-whatsapp-square{
             &:hover, &:focus{
                 transition-delay: 0s, 2s;
                 transform: scale(1.4) rotate(360deg);
-                color: #25D366;
+                color: $whatsapp-cor;
             }
         }
         .fa-github-square{
             &:hover, &:focus{
                 transition-delay: 0s, 2s;
                 transform: scale(1.4) rotate(360deg);
-                color: #333333;
+                color: $github-cor;
             }
         }
         /*
@@ -235,6 +246,10 @@ main{
     a{
         color: $sombra;
         text-decoration-line: none;
+        &:hover, &:focus{
+            color: $cor-principal;
+            font-weight: bold;
+        }
     }
     @media #{$mobile} {
         width: 100%;

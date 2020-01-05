@@ -6,7 +6,8 @@ body {
   max-width: 1300px;
   margin: 0 auto;
   background: #b3b3b3;
-  font-size: 14px; }
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif, 'Barriecito', cursive, Arial, Helvetica, sans-serif; }
   body a:link {
     text-decoration: none; }
   body a {
@@ -31,8 +32,7 @@ body {
   background: #b3b3b3;
   color: #fff;
   overflow-x: hidden;
-  line-height: 1.4;
-  font-family: 'Ubuntu', sans-serif, 'Barriecito', cursive, Arial, Helvetica, sans-serif; }
+  line-height: 1.4; }
   @media (max-width: 700px) {
     #site #destaque {
       background: #09394f; } }
@@ -126,23 +126,27 @@ header {
     header #redes-sociais .fa-linkedin:hover, header #redes-sociais .fa-linkedin:focus {
       transition-delay: 0s, 2s;
       transform: scale(1.4) rotate(360deg);
-      color: #0077B5; }
-    header #redes-sociais .fa-instagram:hover, header #redes-sociais .fa-instagram:focus {
-      transition-delay: 0s, 2s;
-      transform: scale(1.4) rotate(360deg);
-      color: #8134AF; }
+      color: #0077b5; }
+    header #redes-sociais .fa-instagram {
+      background: -webkit-linear-gradient(#515BD4, #8134AF, #DD2A7B, #FEDA77, #F58529);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+      header #redes-sociais .fa-instagram:hover, header #redes-sociais .fa-instagram:focus {
+        transition-delay: 0s, 2s;
+        transform: scale(1.4) rotate(360deg);
+        color: #DD2A7B; }
     header #redes-sociais .fa-facebook-square:hover, header #redes-sociais .fa-facebook-square:focus {
       transition-delay: 0s, 2s;
       transform: scale(1.4) rotate(360deg);
-      color: #3B5998; }
+      color: #4266b1; }
     header #redes-sociais .fa-whatsapp-square:hover, header #redes-sociais .fa-whatsapp-square:focus {
       transition-delay: 0s, 2s;
       transform: scale(1.4) rotate(360deg);
-      color: #25D366; }
+      color: #5abfa5; }
     header #redes-sociais .fa-github-square:hover, header #redes-sociais .fa-github-square:focus {
       transition-delay: 0s, 2s;
       transform: scale(1.4) rotate(360deg);
-      color: #333333; }
+      color: #24292e; }
   @media (max-width: 700px) {
     header {
       width: 100%;
@@ -173,6 +177,9 @@ main {
   main a {
     color: #090806;
     text-decoration-line: none; }
+    main a:hover, main a:focus {
+      color: #0f5a7c;
+      font-weight: bold; }
   @media (max-width: 700px) {
     main {
       width: 100%;
