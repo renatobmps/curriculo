@@ -1,0 +1,37 @@
+html, body{
+    font-family: 'Ubuntu', sans-serif !important;
+    margin: 0 auto;
+    max-width: 1400px;
+    background: darken($color: $cor-secundaria, $amount: 20);
+    .material-icons {
+        vertical-align: middle;
+        margin-right: 1em;
+    }
+    h2 {
+        text-align: center;
+    }
+    a{
+        text-decoration: none;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    ::-webkit-scrollbar {
+        width: .8em;
+        height: .1em;
+        &:hover{
+            width: 1em;
+            height: 1em;
+        }
+    }
+    ::-webkit-scrollbar-track {
+        background: $cor-secundaria;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: $cor-principal;
+        border-radius: 10px 0 0 10px;
+        &:hover{
+            background: $cor-texto;
+        }
+    }
+}

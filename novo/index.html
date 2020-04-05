@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/sass-output.css">
+</head>
+<body class="row flex-xl-nowrap">
+    <noscript><h1 style="color: red; font-size: 3em;">Preciso do JavaScript habilitado</h1></noscript>
+    <header class="container">
+        <section class="destaque">
+            <ul class="lista-destaque">
+                <img src="#" alt="foto do canditado">
+                <h1>Nome...</h1>
+                ...
+            </ul>
+        </section>
+        <section class="sobre">
+            <h2>Um pouco sobre mim<i class="material-icons">chat</i></h2>
+            <p class="lista-sobre">...</p>
+        </section>
+        <section class="contatos">
+            <h2>Contato<i class="material-icons">phone_android</i></h2>
+            <ul class="lista-contatos">
+                ...
+            </ul>
+        </section>
+        <section class="redes-sociais">
+            <h2>Me conheça melhor<i class="material-icons">account_circle</i></h2>
+            <ul class="lista-redes-sociais">
+                ...
+            </ul>
+        </section>
+    </header>
+    <main class="container">
+        <section class="container">
+            <h2><i class="material-icons">book</i>Formação acadêmica</h2>
+            <ul class="lista-formacoes">
+                ...
+            </ul>
+        </section>
+        <section class="container">
+            <h2><i class="material-icons">business_center</i>Experiência Profissional</h2>
+            <ul class="lista-experiencias">
+                ...
+            </ul>
+        </section>
+        <section class="container">
+            <h2><i class="material-icons">library_books</i>Qualificações e atividades profissionais</h2>
+            <ul class="lista-qualificacoes">
+                ...
+            </ul>
+        </section>
+        <section class="container">
+            <h2><i class="material-icons">collections_bookmark</i>Mais cursos</h2>
+            <ul class="lista-mais-cursos">
+                ...
+            </ul>
+        </section>
+    </main>
+    <footer class="fixed-bottom bg-secondary d-flex justify-content-around align-items-center">
+        ...
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <script src="js/dados.js"></script>
+    <script src="js/head.js"></script>
+    <script src="js/body.js"></script>
+    
+    <script src="js/header/destaque.js"></script>
+    <script src="js/header/perfil.js"></script>
+    <script src="js/header/contatos.js"></script>
+    <script src="js/header/redes-sociais.js"></script>
+    
+    <script src="js/main/formacao.js"></script>
+    <script src="js/main/experiencia.js"></script>
+    <script src="js/main/qualificacoes.js"></script>
+    <script src="js/main/mais-cursos.js"></script>
+    
+    <script src="js/footer/footer.js"></script>
+    <!--
+        lista = []
+        
+        Array.forEach(dado => {
+            lista.push(`
+            <li></li>
+            `
+            )
+        })
+        
+        document.querySelector(".lista-").innerHTML = `${lista.join("")}`
+    -->
+</body>
+</html>

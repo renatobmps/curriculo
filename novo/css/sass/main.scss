@@ -1,0 +1,17 @@
+main {
+    background: $cor-secundaria;
+    a{
+        color: $cor-texto;
+        &:hover{
+            color: $cor-principal;
+            font-weight: bold;
+        }
+    }
+    strong{
+        color: $cor-principal;
+        font-weight: bold;
+    }
+    li{
+        margin: 3em 0;
+    }
+}

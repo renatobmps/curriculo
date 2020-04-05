@@ -1,0 +1,1 @@
+document.querySelector('footer').innerHTML = `<p>Feito por</p><strong>${pagina.autor}</strong>`

@@ -1,0 +1,1 @@
+document.querySelector(".lista-sobre").innerHTML = dados.pessoais.sobre

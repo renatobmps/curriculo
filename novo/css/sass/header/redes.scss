@@ -1,0 +1,11 @@
+.redes-sociais{
+    flex-direction: column;
+    ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .fab, .far{
+            font-size: 1.8em;
+        }
+    }
+}
