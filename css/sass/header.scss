@@ -1,0 +1,45 @@
+header {
+    background: $cor-primaria;
+    color: $cor-secundaria;
+    width: 20% !important;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    justify-content: space-around;
+    z-index: 1;
+    ul{
+        padding: 0;
+        list-style: none;
+    }
+    section{
+        display: flex;
+        width: 100%;
+        padding: 1em;
+    }
+    a{
+        color: $cor-secundaria;
+        &:hover{
+            color: $cor-terciaria;
+            transition: 1s all;
+        }
+    }
+    h2{
+        font-size: 1.5em;
+        border: 1px solid;
+        border-radius: 25px;
+        margin: .8em;
+        background: darken($color: $cor-primaria, $amount: 15);
+        i.material-icons{
+            margin: .2em;
+        }
+        @media (min-width: $breakpoint) {
+            margin: 3em 0;
+            padding: .2em;
+        }
+    }
+    @media (max-width: $breakpoint) {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 auto !important;
+    }
+}

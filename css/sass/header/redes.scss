@@ -1,0 +1,19 @@
+.redes-sociais{
+    flex-direction: column;
+    ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        bottom: 2em;
+        right: 1.5em;
+        z-index: 50;
+        flex-direction: column;
+        .fab, .far, .fas{
+            font-size: 1.8em;
+        }
+        li{
+            text-shadow: 0 0 1em black;
+        }
+    }
+}

@@ -1,0 +1,172 @@
+html, body {
+  font-family: 'Ubuntu', sans-serif !important;
+  margin: 0 auto;
+  max-width: 1400px;
+  background: #cccccc;
+  color: #090806;
+  display: flex;
+  flex-flow: row nowrap; }
+  html .invisivel, body .invisivel {
+    display: none; }
+  html .material-icons, body .material-icons {
+    vertical-align: middle;
+    margin-right: 1em; }
+  html h1, html h2, body h1, body h2 {
+    text-align: center;
+    font-weight: bold; }
+  html a, body a {
+    text-decoration: none; }
+    html a:hover, body a:hover {
+      text-decoration: none; }
+  html ::-webkit-scrollbar, body ::-webkit-scrollbar {
+    width: .8em;
+    height: .1em; }
+    html ::-webkit-scrollbar:hover, body ::-webkit-scrollbar:hover {
+      width: 1em;
+      height: 1em; }
+  html ::-webkit-scrollbar-track, body ::-webkit-scrollbar-track {
+    background: #fff; }
+  html ::-webkit-scrollbar-thumb, body ::-webkit-scrollbar-thumb {
+    background: #0f5a7c;
+    border-radius: 10px 0 0 10px; }
+    html ::-webkit-scrollbar-thumb:hover, body ::-webkit-scrollbar-thumb:hover {
+      background: #090806; }
+  @media (max-width: 790px) {
+    html, body {
+      flex-flow: column wrap; } }
+
+header {
+  background: #0f5a7c;
+  color: #fff;
+  width: 20% !important;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  justify-content: space-around;
+  z-index: 1; }
+  header ul {
+    padding: 0;
+    list-style: none; }
+  header section {
+    display: flex;
+    width: 100%;
+    padding: 1em; }
+  header a {
+    color: #fff; }
+    header a:hover {
+      color: #090806;
+      transition: 1s all; }
+  header h2 {
+    font-size: 1.5em;
+    border: 1px solid;
+    border-radius: 25px;
+    margin: .8em;
+    background: #072838; }
+    header h2 i.material-icons {
+      margin: .2em; }
+    @media (min-width: 790px) {
+      header h2 {
+        margin: 3em 0;
+        padding: .2em; } }
+  @media (max-width: 790px) {
+    header {
+      width: 100% !important;
+      padding: 0 !important;
+      margin: 0 auto !important; } }
+
+.destaque {
+  flex-direction: column; }
+  .destaque img {
+    border-radius: 50%;
+    border: none;
+    background: #fff;
+    transition: 1s all; }
+    .destaque img:hover {
+      border: 0;
+      transform: rotate(360deg) scale(1.3); }
+    @media (max-width: 790px) {
+      .destaque img {
+        width: 50%; } }
+  .destaque #nome {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    margin: 1em 0; }
+  .destaque .objetivo {
+    text-shadow: 0 0 5px #fff;
+    transition: .5s all; }
+    .destaque .objetivo:hover {
+      transform: scale(1.2);
+      text-shadow: 0 0 10px #fff; }
+  @media (max-width: 790px) {
+    .destaque {
+      background: #072838;
+      border: 1em solid #0f5a7c; } }
+
+.sobre {
+  flex-direction: column; }
+
+.contatos {
+  flex-direction: column; }
+  .contatos .lista-contatos {
+    font-size: .8em;
+    display: flex;
+    flex-direction: column; }
+    @media (max-width: 790px) {
+      .contatos .lista-contatos {
+        font-size: 1em; } }
+    .contatos .lista-contatos a {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .contatos .lista-contatos a i {
+        margin-right: .5em; }
+
+.redes-sociais {
+  flex-direction: column; }
+  .redes-sociais ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 2em;
+    right: 1.5em;
+    z-index: 50;
+    flex-direction: column; }
+    .redes-sociais ul .fab, .redes-sociais ul .far, .redes-sociais ul .fas {
+      font-size: 1.8em; }
+    .redes-sociais ul li {
+      text-shadow: 0 0 1em black; }
+
+main {
+  background: #fff;
+  padding: 2em;
+  box-shadow: 0 0 3em black; }
+  main a {
+    color: #090806; }
+    main a:hover {
+      color: #0f5a7c;
+      font-weight: bold; }
+  main strong {
+    color: #0f5a7c;
+    font-weight: bold; }
+  main li {
+    margin: 3em 0; }
+  main ul {
+    padding-left: 1em; }
+  main ul#navegacao {
+    margin-bottom: 3em; }
+  main.container {
+    margin: 1em; }
+    @media (max-width: 790px) {
+      main.container {
+        width: calc(100% - 2em); } }
+
+footer {
+  border-radius: 10px 10px 0 0;
+  opacity: .9; }
+
+footer p {
+  margin: 0;
+  padding: .5em; }
+
+/*# sourceMappingURL=sass-output.css.map */
