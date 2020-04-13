@@ -8,13 +8,3 @@ dados.maisCursos.forEach(curso => {
 })
 
 document.querySelector(".lista-mais-cursos").innerHTML = `${listaMaisCursos.join("")}`
-
-/*
-let html = `
-<li>
-    <a href="${this.link}" target="_blank">${this.nome}</a> - ${this.instituicao} (${this.ano}).
-</li>
-`
-
-criaLista("listaMaisCursos", dados.maisCursos, html, "lista-mais-cursos", this)
-*/

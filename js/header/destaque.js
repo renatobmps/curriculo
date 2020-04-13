@@ -9,28 +9,12 @@ function calculaIdade(data){
     var ano = parseInt(new Date().getFullYear());
     console.log(`Hoje: ${dia}/${mes}/${ano}`)
     
-    let idade = parseInt(0);
-    
-    if (mes >= nascimento[1]) {
-        console.log("Mês atual é maior ou igual ao mes de nascimento")
-        if (mes = nascimento[1] && dia <= nascimento[2]) {
-            console.log("mes atual é igual ao mês de nasc. e o dia atual é menor ou igal ao dia de nascimento")
-            semAniversario();
-        } else {
-            console.log("O mês atual é diferente do mês de nascimento ou o dia atual é maior que o dia do nascimento")
-            comAniversario();
-        }
-    } else {
-        console.log("O mês atual é menor do que o mês de nascimento")
-        semAniversario();
-    }
-    function comAniversario() {
-        idade = ano - nascimento[0];
-        console.log(`${ano} - ${nascimento[0]} = ${idade}`)
-    }
-    function semAniversario() {
-        idade = (ano - nascimento[0]) - 1;
+    idade = ano - nascimento[0]
+    if(mes == nascimento[1] && dia < nascimento[2] || mes < nascimento[1]) {
+        idade = idade - 1
         console.log(`${ano} - ${nascimento[0]} - 1 = ${idade}`)
+    }else{
+        console.log(`${ano} - ${nascimento[0]} = ${idade}`)
     }
     
     return idade;

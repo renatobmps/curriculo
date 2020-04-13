@@ -21,6 +21,11 @@ main {
     }
     ul#navegacao{
         margin-bottom: 3em;
+        flex-wrap: nowrap;
+        font-size: .8em;
+        .nav-link{
+            padding: .5rem .5rem;
+        }
     }
     &.container{
         margin: 1em;

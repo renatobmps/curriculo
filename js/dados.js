@@ -1,6 +1,6 @@
 dados = {
     pessoais: {
-        foto: "linkedin.jpeg",
+        foto: "social.JPG",
         nome: "Renato Brandão Martins Pinheiro Silva",
         nascionalidade: "Brasileiro",
         civil: "casado",
@@ -239,7 +239,7 @@ dados = {
             instituicao: "Alura Cursos Online",
             link: "https://cursos.alura.com.br/certificate/51689752-333b-4afd-8b96-ab78a04815af"
         },
-    ]
+    ],
 }
 
 pagina = {

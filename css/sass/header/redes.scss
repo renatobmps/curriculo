@@ -1,5 +1,11 @@
 .redes-sociais{
     flex-direction: column;
+    h2{
+        display: none;
+        @media #{$bp-mobile} {
+            display: block;
+        }
+    }
     ul{
         display: flex;
         justify-content: space-around;
@@ -13,7 +19,15 @@
             font-size: 1.8em;
         }
         li{
-            text-shadow: 0 0 1em black;
+            @media #{$bp-desktop} {
+                text-shadow: 0 0 1em black;
+            }
+        }
+        @media #{$bp-mobile} {
+            position: relative;
+            flex-flow: row nowrap;
+            bottom: 0;
+            right: 0;
         }
     }
 }
