@@ -174,6 +174,29 @@ dados = {
             link:"https://cursos.alura.com.br/certificate/b774f264-7294-4371-99b9-1d5da2c16147"
         },
         {
+            nome: "HTML5 e CSS3 Parte 1: A Primeira Página da Web",
+            ano: "2020",
+            instituicao: "Alura Cursos Online",
+            link: "https://cursos.alura.com.br/certificate/d9cc475a-6939-4bf1-aae7-02f84518421a"
+        },
+        {
+            nome: "HTML5 e CSS3 Parte 2: Posicionamento, Listas e Navegação",
+            ano: "2020",
+            instituicao: "Alura Cursos Online",
+            link: "https://cursos.alura.com.br/certificate/402c14ae-7cfa-45a7-a146-c49dfeae99d1"
+        },
+        {
+            nome: "HTML5 e CSS3 Parte 3: Trabalhando com Formulários e Tabelas",
+            ano: "2020",
+            instituicao: "Alura Cursos Online",
+            link: "https://cursos.alura.com.br/certificate/9e4cec6e-4ac2-4513-a844-d1b54128aa1e"
+        },{
+            nome: "HTML5 e CSS3 Parte 4: Avançando no CSS",
+            ano: "2020",
+            instituicao: "Alura Cursos Online",
+            link: "https://cursos.alura.com.br/certificate/23a77f30-b647-486c-a949-0c3f45b59456"
+        },
+        {
             nome: "UX: O que é Experiência do Usuário",
             ano: "2019",
             instituicao: "Alura Cursos Online",
@@ -238,6 +261,18 @@ dados = {
             ano: "2020",
             instituicao: "Alura Cursos Online",
             link: "https://cursos.alura.com.br/certificate/51689752-333b-4afd-8b96-ab78a04815af"
+        },
+        {
+            nome: "JavaScript Avançado II: ES6, Orientação a Objetos e Padrões de Projetos",
+            ano: "2020",
+            instituicao: "Alura Cursos Online",
+            link: "https://cursos.alura.com.br/certificate/5cc77322-6464-4ea7-aa56-8292d3a990d7"
+        },
+        {
+            nome: `<strong>Formação Front-end completo</strong>`,
+            ano: "2020",
+            instituicao: "Alura Cursos Online",
+            link: "https://cursos.alura.com.br/degree/certificate/54422b12-aa37-4af9-9f6d-b53da9f8fecb"
         },
     ],
 }
