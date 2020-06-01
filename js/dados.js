@@ -257,13 +257,13 @@ dados = {
             link:"https://cursos.alura.com.br/certificate/864ea7e7-1cb2-4463-a13e-4c88fab43376"
         },
         {
-            nome: "JavaScript Avançado I: ES6, Orientação a Objetos e Padrões de Projetos",
+            nome: "JavaScript Avançado I: Conhecendo o Browser e Padrões de Projeto",
             ano: "2020",
             instituicao: "Alura Cursos Online",
             link: "https://cursos.alura.com.br/certificate/51689752-333b-4afd-8b96-ab78a04815af"
         },
         {
-            nome: "JavaScript Avançado II: ES6, Orientação a Objetos e Padrões de Projetos",
+            nome: "JavaScript Avançado II: Aprofundando em MVC, padrão Proxy e Factory",
             ano: "2020",
             instituicao: "Alura Cursos Online",
             link: "https://cursos.alura.com.br/certificate/5cc77322-6464-4ea7-aa56-8292d3a990d7"
@@ -273,6 +273,12 @@ dados = {
             ano: "2020",
             instituicao: "Alura Cursos Online",
             link: "https://cursos.alura.com.br/degree/certificate/54422b12-aa37-4af9-9f6d-b53da9f8fecb"
+        },
+        {
+            nome: "JavaScript Avançado III: Salvando Dados Localmente com IndexedDB",
+            ano: "2020",
+            instituicao: "Alura Cursos Online",
+            link: "https://cursos.alura.com.br/certificate/a14b95f5-33d2-48c8-9f5c-ccfdf705195c"
         },
     ],
 }
