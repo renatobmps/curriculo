@@ -7,4 +7,5 @@ document.head.innerHTML = `
     <link rel="stylesheet" href="css/font-awesome/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/sass-output.css">
+    <link rel="shutcut icon" href="img/${pagina.icone}" type="image/x-icon">
 `
