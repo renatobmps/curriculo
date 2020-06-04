@@ -280,6 +280,12 @@ dados = {
             instituicao: "Alura Cursos Online",
             link: "https://cursos.alura.com.br/certificate/a14b95f5-33d2-48c8-9f5c-ccfdf705195c"
         },
+        {
+            nome: "Webpack: Manipulando módulos na sua Webapp",
+            ano: 2020,
+            instituicao: "Alura Cursos Online",
+            link: "https://cursos.alura.com.br/certificate/2609812f-a54e-4b8f-9de8-73096eeb03ee"
+        }
     ],
 }
 
