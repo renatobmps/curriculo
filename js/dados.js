@@ -285,6 +285,12 @@ dados = {
             ano: 2020,
             instituicao: "Alura Cursos Online",
             link: "https://cursos.alura.com.br/certificate/2609812f-a54e-4b8f-9de8-73096eeb03ee"
+        },
+        {
+            nome: "React Parte 1: Componentes Reutilizáveis Para Sua WebApp",
+            ano: 2020,
+            instituicao: "Alura Cursos Online",
+            link: "https://cursos.alura.com.br/certificate/462d6b40-1429-4b64-9c4d-3b94adc30ef3"
         }
     ],
 }
