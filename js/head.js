@@ -9,4 +9,6 @@ document.head.innerHTML = `
     <link rel="stylesheet" href="css/sass-output.css">
     <link rel="shutcut icon" href="img/${pagina.icone}" type="image/x-icon">
     <meta name="theme-color" content="#0f5a7c">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0f5a7c">
+    <meta name="msapplication-navbutton-color" content="#0f5a7c">
 `
