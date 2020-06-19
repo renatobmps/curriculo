@@ -291,6 +291,12 @@ dados = {
             ano: 2020,
             instituicao: "Alura Cursos Online",
             link: "https://cursos.alura.com.br/certificate/462d6b40-1429-4b64-9c4d-3b94adc30ef3"
+        },
+        {
+            nome: "React Parte 2: Validação, Rotas e integração com API",
+            ano: 2020,
+            instituicao: "Alura Cursos Online",
+            link: "https://cursos.alura.com.br/certificate/723c3fab-058a-4e34-9218-a67a5e08a5ba"
         }
     ],
 }
